@@ -1,0 +1,31 @@
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: basic.css 257 2010-07-27 23:06:56Z emartin24 $
+ */
+
+#basic-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#simplemodal-container {height:600px; width:100%; color:#757575; background:url(../images/forgot-password-bg.jpg) repeat-x; border:4px solid #ffffff; padding:10px 10px 10px 10px; border-radius:4px; box-shadow:0 0 5px #000;}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {background:url(../images/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+#simplemodal-container h3{width:100%; font-size:30px; font-weight:bold; color:#1896c8; padding:0px 0px 10px 0px; margin:0px; border-bottom: solid 1px #e6e6e6;}
+#simplemodal-container .input_field2{ float:left; border: solid 1px #d3d3d3; background:#fff; color:#757575; height:25px; padding:5px; width:440px; font-size:15px; font-family:Calibri; border-radius:2px; margin:0 0 15px 0px;}
+#simplemodal-container .reset_btn_div{ float:left; padding:16px 0 5px 0px;}
+#simplemodal-container .cancel{color:#1896c8; margin:7px 0 0 5px; float:left; width:100px;}
+#simplemodal-container .cancel a{color:#1896c8; text-decoration:none;}
+#simplemodal-container .cancel a:hover{color:#1896c8;}
+

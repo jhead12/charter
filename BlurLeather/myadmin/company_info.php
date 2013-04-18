@@ -1,0 +1,132 @@
+<?php
+require_once("../class/class.admin.php");
+require_once("../class/class.pagination.php");
+$obj = new Admin();
+$obj->RequireLogin();
+if($_REQUEST['action']=="delete"){
+	$query="delete from company_info where info_id='".$_REQUEST['info_id']."'";
+	$obj->UpdateQuery($query);
+	$_SESSION['ERRORTYPE'] = "success";
+	$_SESSION['ERRORMSG'] = "Company Info has been deleted successfully!";
+	$obj->ReturnReferer();
+	exit();
+}
+if(isset($_POST['btnupdate'])){
+	$query="update company_info set info_title='".$obj->ReplaceSql($_POST['info_title'])."', info_content='".$obj->ReplaceSql($_POST['info_content'])."' where info_id='".$obj->ReplaceSql($_POST['info_id'])."'";
+	$obj->UpdateQuery($query);
+	$_SESSION['ERRORTYPE'] = "success";
+	$_SESSION['ERRORMSG'] = "Company Info has been updated successfully!";
+	$obj->ReturnReferer();
+}
+if(isset($_POST['btnsave'])){
+	$query="insert into company_info set info_title='".$obj->ReplaceSql($_POST['info_title'])."', info_content='".$obj->ReplaceSql($_POST['info_content'])."'";
+	$obj->InsertQuery($query);
+	$_SESSION['ERRORTYPE'] = "success";
+	$_SESSION['ERRORMSG'] = "Company Info has been added successfully!";
+	$obj->ReturnReferer();
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?php include_once("inc.head.php");?>
+</head>
+<body>
+<?php require_once("message.php");?>
+<div class="full"><h1>Manage Company Info<?php if($_REQUEST['action']=="edit"){ echo "[Edit]";} ?> <?php if($_REQUEST['action']=="add"){ echo "[Add]";} ?> <?php if($_REQUEST['action']=="view"){ echo "[View]";} ?></h1></div>
+<ul class="tabs">
+    <li><a href="?"<?php echo $_GET['action']!='add' ? ' class="current"': '';?>>List of Company Info</a></li>
+    <li><a href="?action=add"<?php echo $_GET['action']=='add' ? ' class="current"': '';?>>Add New</a></li>
+</ul>
+<?php 
+    if($_REQUEST['action']=="add" || $_REQUEST['action']=="edit"){
+    if($_REQUEST['action']=="edit" && isset($_REQUEST['info_id'])){
+        $query = "select * from company_info where info_id='".$_REQUEST['info_id']."'";
+        $data = $obj->SelectQuery($query); 
+    }?>
+<form method="post" enctype="multipart/form-data" name="category" id="category" onsubmit="return validate(document.forms['category']);" >
+<table width="100%" cellspacing="1" cellpadding="10" class="tbl">
+	<tr>
+    	<th colspan="2">Create Company Info</th>
+	</tr>
+    <tr>
+    	<td width="20%"><label id="err_info_title">Company Info Title : </label> <span class="error">*</span></td>
+        <td><input type="text" title="Company Info Title" class="R"  name="info_title" id="info_title" value="<?php echo (isset($data[0])) ? $data[0]['info_title'] : $_POST['info_title'];?>" size="40"/>
+        </td>
+	</tr>
+     <tr>
+    	<td><label id="err_info_content">Company Info Content : </label></td>
+        <td><textarea id="info_content" name="info_content" rows="5" cols="80" class="R" title="Company Info Content"><?php echo (isset($data[0])) ? $data[0]['info_content'] : $_POST['info_content'];?></textarea></td>
+	</tr>
+    <tr>
+    	<td>&nbsp;</td>
+    	<td class="txtcenter">
+            <?php if($_REQUEST['action']=="edit"){?>
+            <input type="hidden" name="info_id" value="<?php echo $_REQUEST['info_id']?>" />
+            <input type="submit" name="btnupdate" value="Update" class="button" />
+            <?php }else{?>
+            <input type="submit" name="btnsave" value="Save" class="button" />
+            <?php }?>
+            <input type="button" value="Back" class="button" onclick="window.location='<?php echo $_SESSION['CURRENT_URL']?>';" />
+        </td>
+	</tr>
+</table>
+</form>
+<?php }else{$obj->SetCurrentUrl();?>
+<table width="100%" cellspacing="1" cellpadding="10" class="tbl">
+    <tr>
+        <th colspan="5">
+        <form> 
+			keywords: 
+            <input type="text" name="keyword" id="keyword" value="Search Title" onfocus="if(this.value==this.defaultValue){this.value='';}" size="40"/>
+            <input type="submit" value="Go" class="button" onclick="if($('#keyword').val()=='Search Title'){$('#keyword').val('');}" />
+            <input type="button" value="View All" class="button" onclick="window.location='<?php echo $_SERVER['PHP_SELF']?>';" />
+		 </form>
+        </th>
+    </tr>
+    <tr>
+        <td colspan="5" class="paging">
+        Search by alphabets:
+        <?php for($i=65;$i<=90;$i++){ 
+        if($_REQUEST['alpha']==chr($i)){?>
+        <?php echo "<b>" . chr($i) ."</b>"?>
+        <?php } else { ?>	
+        <a href="?alpha=<?php echo chr($i)?>" title="[<?php echo chr($i)?>]"><?php echo chr($i)?></a>
+        <?php }}?>
+        </td>
+	</tr>      
+    <?php 
+        $keyword = $obj->ReplaceSql($_REQUEST['keyword']);
+        $alpha = $obj->ReplaceSql($_REQUEST['alpha']);
+        $where = '';
+        if($alpha!=''){$where .= " and (info_title like '".$alpha."%')";}
+        if($keyword!=''){$where .= " and (info_title like '%".$keyword."%' or info_content like '%".$keyword."%')";}
+        $query="select * from company_info where 1=1 $where order by info_id desc";
+        $pager = new Pagination($query,$_REQUEST['page'],20,5);
+        if($data = $pager->Paging()){$i = $pager->GetSNo();?>
+	<tr>
+    	<th width="10%">Sr. No</th>
+        <th width="20%">Company Info Title</th>
+        <th width="60%">Company Info Content</th>
+        <th width="10%">Action</th>
+    </tr>
+    <?php foreach ($data as $row){?>
+	<tr>
+    	<td><?php echo $i++;?></td>
+        <td><?php echo $row['info_title'];?></td>
+        <td><div class="content"><?php echo $row['info_content'];?></div></td>
+        <td>
+        	<a href="?action=edit&info_id=<?php echo $row['info_id']?>" class="edit" title="Edit"></a>
+            <a href="?action=delete&info_id=<?php echo $row['info_id']?>" onclick="return confirm('Are you sure to delete?')" class="delete" title="Delete"></a>
+		</td>            
+	</tr>
+        <?php } ?>
+		<tr><td colspan="4" class="paging"><?php echo $pager->DisplayAllPaging("alpha=".$alpha."&keyword=".$keyword);?></td></tr>
+    <?php } else { ?>
+    	<tr><td colspan="4" class="red txtcenter">No Company Info Found!</td></tr>
+    <?php } ?>
+</table>
+<?php } ?>
+<?php include_once("footer.php");?>
+</body>
+</html>

@@ -1,0 +1,5 @@
+Frequently asked Questions 
+Link this homepage button to this page: http://www.sidewaysmarkets.com/p/faq.html 
+
+Show days highlighted in the calendar and on click show events of that date in the calendar 
+Event--begin time, end time, title and description for calendar entry

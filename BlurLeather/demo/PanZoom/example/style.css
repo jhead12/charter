@@ -1,0 +1,49 @@
+div.wrapper {
+	width: 615px;
+}
+.none{ display:none;}
+/* if you are reading this, the below is the start of the css for the image and wrapper div for the panner - thats probably what you are interested in */
+div#pan {
+	width: 585px;
+	height: 410px;
+	overflow: hidden;
+}
+/* and this is the end */
+
+/* this is extra stuff for #pan to get the layout right for the eg - not necessary */
+div#pan {
+  float: left;
+  margin-bottom: 5px;
+}
+
+div.me {
+	font-size: 12px;
+	width: 400px;
+	border: #dddddd 1px solid;
+	margin-bottom: 5px;
+}
+
+div.me img {
+	float: left;
+	margin-right:5px;
+}
+
+div#output, div#images {
+	width: 585px;
+	padding: 5px;
+	float:left;
+	margin-bottom: 5px;
+}
+div#controls{
+	width:18px; height:auto; float:left;	
+}
+div#controls a img {
+	border: none;
+	margin-left:2px;
+}
+div#controls a:hover {
+	text-decoration: underline;
+}
+div.clear {
+	clear: both;
+}

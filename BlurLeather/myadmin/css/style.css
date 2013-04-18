@@ -1,0 +1,87 @@
+@import url("fonts.css");
+.oswald,.oswald a{font-family:"oswald"; text-transform:uppercase;font-size:13pt; color:#333;}
+*{outline:none;font-family:"Droid Sans"; word-wrap:break-word;}
+body{ margin:0px; padding:0px;font-family:"Droid Sans"; font-size:12px;background:#fff; color:#000;}
+h1,h2,h3,h4,h5,h6,p{margin:2px 0px; padding:2px 0px;}
+a{text-decoration:underline; color:#333;}
+a:hover{ color:#F00; text-decoration:none;}
+.bold{ font-weight:bold;}
+.paddtop10{ padding-top:10px;}
+.error,.red{color:#ED1B24;}
+h2,h3,h1{color:#1C1C1E;}
+img{ border:none;}
+.pic{ background:#fbfbfb; border:1px solid #eaeaea; padding:3px;}
+select,textarea,input[type=password], input[type=text]{padding:4px; background:#fff; -moz-border-radius:3px; -webkit-border-radius:3px;  border-radius:3px; border:1px solid #c0c0c0; color:#474747; font-size:10pt; -moz-box-shadow: rgba(200,204,206,0.30) 0px 0px 10px 2px; -webkit-box-shadow:rgba(200,204,206,0.30) 0px 0px 10px 2px;box-shadow:rgba(200,204,206,0.30) 0px 0px 10px 2px;}
+select:focus, textarea:focus, input[type=text]:focus, input[type=password]:focus, input[type=file]:focus{ background:#fdfdd9;}
+.fullform select,.fullform textarea,.fullform input[type=password],.fullform input[type=text]{ width:95%;}
+.button{background:#1C1C1E; padding:2px 5px; display:inline-block; color:#fff; font-size:9pt; font-family:Oswald; text-decoration:none;-moz-border-radius:3px; -webkit-border-radius:3px; -ms-border-radius:3px;-o-border-radius:3px;border-radius:3px; border:none; cursor:pointer; text-transform:uppercase;}
+a.button{padding:0px 8px;}
+.button:focus, .button:hover,a.button:focus, a.button:hover{background-position:0px -30px; color:#fff}
+.paging { text-align:center}
+.paging b,.paging a{height:20px; line-height:20px; display:inline-block; color:#fff; font-size:8pt; font-family:Oswald; text-decoration:none;-moz-border-radius:3px; -webkit-border-radius:3px; -ms-border-radius:3px;-o-border-radius:3px;border-radius:3px; border:none; text-transform:uppercase; padding:0px 5px; font-weight:normal}
+.paging a{background:#1C1C1E;}
+.paging b{ color:#333; border:1px solid; height:18px; line-height:18px;}
+.paging a:hover,.paging a:focus{background-position:0px -30px;}
+#error-data{ background:#FFF; bottom:30px; left:30px; padding:10px 20px 10px 10px; float:left; border:3px solid #670001; position:fixed; z-index:230000; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px; display:none;}
+input.error,select.error,textarea.error{ border:1px solid red}
+
+.relative{ position:relative}
+.txtleft{ text-align:left;}
+.txtcenter{ text-align:center;}
+.txtright{ text-align:right;}
+
+table.tbl{ width:100%; float:left;}
+table.tbl td,table.tbl th{text-align:left; border:1px solid #cdcdcd; vertical-align:top}
+table.tbl tr th{text-align:left; background:#d7d7d7 url(../images/title-bg.png) repeat-x; color:#1C1C1E;font-size:11pt; font-weight:normal;}
+
+.rows:nth-child(odd), table.tbl tr:nth-child(odd){ background:#fcfcfc;}
+.rows:nth-child(even), table.tbl tr:nth-child(even){ background:#f5f5f5;}
+.rows:hover, table.tbl tr:hover{ background:#f0f0f0;}
+
+.rows{ width:100%; float:left; padding:3px 0px; clear:both; text-align:left; border-top:1px solid #dbdbdb;}
+.rowshdr{width:100%; float:left; padding:3px 0px; clear:both; text-align:left; border-top:1px solid #dbdbdb; background:#d7d7d7 url(../images/title-bg.png) repeat-x; color:#670001;font-size:11pt; font-weight:normal;}
+.grid{ border:1px solid #dbdbdb; padding:5px; float:left; width:98%;}
+.cols5{ float:left; width:3%; padding:3px 1%;}
+.cols10{ float:left; width:8%; padding:3px 1%;}
+.cols15{ float:left; width:13%; padding:3px 1%;}
+.cols20{ float:left; width:18%; padding:3px 1%;}
+.cols25{ float:left; width:23%; padding:3px 1%;}
+.cols30{ float:left; width:28%; padding:3px 1%;}
+.cols35{ float:left; width:33%; padding:3px 1%;}
+.cols40{ float:left; width:38%; padding:3px 1%;}
+.cols45{ float:left; width:43%; padding:3px 1%;}
+.cols50{ float:left; width:48%; padding:3px 1%;}
+.cols55{ float:left; width:53%; padding:3px 1%;}
+.cols60{ float:left; width:58%; padding:3px 1%;}
+.cols70{ float:left; width:68%; padding:3px 1%;}
+.cols75{ float:left; width:73%; padding:3px 1%;}
+.cols80{ float:left; width:78%; padding:3px 1%;}
+.cols85{ float:left; width:83%; padding:3px 1%;}
+.cols90{ float:left; width:88%; padding:3px 1%;}
+.cols95{ float:left; width:93%; padding:3px 1%;}
+.cols100{ float:left; width:98%; padding:3px 1%;}
+
+
+.content{ max-height:100px; max-width:600px;overflow-y:auto;}
+.content500{max-height:500px; overflow-y:auto;}
+
+div.success{color:#49AB01; font-weight:bold;}
+div.error,label.error{ color:red; font-weight:bold;}
+.none{ display:none;}
+.block{ display:block; padding:5px 0 0 0;}
+a.add{ background:url(../images/add.png) no-repeat left center;height:16px; width:16px; display:inline-block; padding:2px;}
+.delete{ background:url(../images/delete.png) no-repeat center; height:16px; width:16px; display:inline-block; padding:2px;}
+.edit{ background:url(../images/edit.png) no-repeat center; height:16px; width:16px; display:inline-block;padding:2px;}
+.view{ background:url(../images/view.png) no-repeat center; height:16px; width:16px; display:inline-block;padding:2px;}
+.delete_btn{ background:url(../images/delete_btn.png); height:23px; width:20px; display:block; float:left; margin:0px 0px 0px 10px;}
+
+.active{ background:url(../images/active.png) no-repeat center; height:16px; width:16px; display:inline-block;padding:2px;}
+.deactive{ background:url(../images/deactive.png) no-repeat center; height:16px; width:16px; display:inline-block;padding:2px;}
+
+.fullform select,.fullform textarea,.fullform input[type=password],.fullform input[type=text]{ width:95%;}
+
+.tabs{ margin:0px;padding:0px;float:left; clear:both; list-style:none; width:100%; margin-top:-26px;}
+.tabs li{float:right; padding:0px 5px; margin:0px; font-size:14px;}
+.tabs a{ float:left; padding:5px 10px;background:#cdcdcd url(../images/title-bg.png) repeat-x; -moz-border-radius:5px 5px 0px 0px; -webkit-border-radius:5px 5px 0px 0px; border-radius:5px 5px 0px 0px; color:#000; border:1px solid #cdcdcd; text-decoration:none; border-bottom:none;}
+.tabs a:hover, .tabs a.current{ background:#fff; color:#000;}
+.videos iframe{ width:100%; height:200px;}

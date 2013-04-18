@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script> 
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="https://raw.github.com/brandonaaron/jquery-mousewheel/master/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="../jquery-panzoom.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+		<script type="text/javascript">
+			$(document).ready(function () {
+        function initPanZoom() {
+          $('#pan img').panZoom({
+            'zoomIn'   	: 		$('#zoomin'),
+            'zoomOut' 	: 		$('#zoomout'),
+            'panUp'		  :		$('#panup'),
+            'panDown'		:		$('#pandown'),
+            'panLeft'		:		$('#panleft'),
+            'panRight'	:		$('#panright'),
+            'fit'       :   $('#fit'),
+            'destroy'   :   $('#destroy'),
+            'out_x1'    :   $('#x1'),
+            'out_y1'    :   $('#y1'),
+            'out_x2'    :   $('#x2'),
+            'out_y2'    :   $('#y2'),
+            'directedit':   true,
+            'debug'     :   false
+          });
+        };
+
+        initPanZoom();
+
+				// init the image switcher
+				$('#images img').bind('click', function () {
+					$('#pan img').attr('src', $(this).attr('src'));
+				});
+
+        // init the init button (for testing destroy/recreate)
+        $('#reinit').bind('click', function (event) {
+          if ($('#pan img').data('panZoom')) {
+            alert('Click destroy before trying to re-initialise panZoom');
+            return;
+          }
+          event.preventDefault();
+          initPanZoom();
+        });
+
+			});
+		</script>
+	</head>
+	<body>
+    <div class="wrapper">
+    	<input type="text" name="x1" value="0" id="x1" class="none">
+        <input type="text" name="x2" value="0" id="x2" class="none">
+ 		<input type="text" name="y1" value="0" id="y1" class="none">
+        <input type="text" name="y2" value="0" id="y2" class="none">
+      <div id="pan">
+        <img src="sample2.jpg">
+      </div>
+      <div id="controls">
+        <a id="zoomin" href="javascript:;" title="Zoom In"><img src="icons/zoom_in.png"></a>
+        <a id="zoomout" href="javascript:;" title="Zoom Out"><img src="icons/zoom_out.png"></a>
+        <a id="fit" href="javascript:;" title="Reset"><img src="icons/arrow_out.png"></a>
+        <a id="" href="javascript:;" title="Full Screen"><img src="icons/full_screen.png"></a>
+      </div>
+      <div id="images">
+        <a href="javascript:;"><img src="sample.jpg" width="70" height="90" /></a>
+        <a href="javascript:;"><img src="sample2.jpg" width="70" height="90"/></a>
+        <a href="javascript:;"><img src="sample3.jpg" width="70" height="90"/></a>
+      </div>
+    </div>	  
+	</body>
+</html>
+	

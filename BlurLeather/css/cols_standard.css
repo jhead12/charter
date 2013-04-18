@@ -1,0 +1,454 @@
+@charset "utf-8";
+*{ outline:none;}
+a{ text-decoration:none; color:#333333; outline:none;}
+a:focus{ outline:none;}
+a:hover{ text-decoration:none; color:#451c00; outline:none;}
+a:active{ text-decoration:none; color:#451c00; outline:none;}
+.full{ width:100%; float:left; clear:both;}
+.rows{ width:98%;padding:3px 1%; float:left; clear:both;}
+.cols3{ float:left; width:1%; padding:3px 1%;}
+.cols4{ float:left; width:2%; padding:3px 1%;}
+.cols5{ float:left; width:3%; padding:3px 1%;}
+.cols6{ float:left; width:4%; padding:3px 1%;}
+.cols7{ float:left; width:5%; padding:3px 1%;}
+.cols8{ float:left; width:6%; padding:3px 1%;}
+.cols9{ float:left; width:7%; padding:3px 1%;}
+.cols10{ float:left; width:8%; padding:3px 1%;}
+.cols11{ float:left; width:9%; padding:3px 1%;}
+.cols12{ float:left; width:10%; padding:3px 1%;}
+.cols13{ float:left; width:11%; padding:3px 1%;}
+.cols14{ float:left; width:12%; padding:3px 1%;}
+.cols15{ float:left; width:13%; padding:3px 1%;}
+.cols16{ float:left; width:14%; padding:3px 1%;}
+.cols17{ float:left; width:15%; padding:3px 1%;}
+.cols18{ float:left; width:16%; padding:3px 1%;}
+.cols19{ float:left; width:17%; padding:3px 1%;}
+.cols20{ float:left; width:18%; padding:3px 1%;}
+.cols21{ float:left; width:19%; padding:3px 1%;}
+.cols22{ float:left; width:20%; padding:3px 1%;}
+.cols23{ float:left; width:21%; padding:3px 1%;}
+.cols24{ float:left; width:22%; padding:3px 1%;}
+.cols25{ float:left; width:23%; padding:3px 1%;}
+.cols26{ float:left; width:24%; padding:3px 1%;}
+.cols27{ float:left; width:25%; padding:3px 1%;}
+.cols28{ float:left; width:26%; padding:3px 1%;}
+.cols29{ float:left; width:27%; padding:3px 1%;}
+.cols30{ float:left; width:28%; padding:3px 1%;}
+.cols31{ float:left; width:29%; padding:3px 1%;}
+.cols32{ float:left; width:30%; padding:3px 1%;}
+.cols33{ float:left; width:31%; padding:3px 1%;}
+.cols34{ float:left; width:32%; padding:3px 1%;}
+.cols35{ float:left; width:33%; padding:3px 1%;}
+.cols36{ float:left; width:34%; padding:3px 1%;}
+.cols37{ float:left; width:35%; padding:3px 1%;}
+.cols38{ float:left; width:36%; padding:3px 1%;}
+.cols39{ float:left; width:37%; padding:3px 1%;}
+.cols40{ float:left; width:38%; padding:3px 1%;}
+.cols41{ float:left; width:39%; padding:3px 1%;}
+.cols42{ float:left; width:40%; padding:3px 1%;}
+.cols43{ float:left; width:41%; padding:3px 1%;}
+.cols44{ float:left; width:42%; padding:3px 1%;}
+.cols45{ float:left; width:43%; padding:3px 1%;}
+.cols46{ float:left; width:44%; padding:3px 1%;}
+.cols47{ float:left; width:45%; padding:3px 1%;}
+.cols48{ float:left; width:46%; padding:3px 1%;}
+.cols49{ float:left; width:47%; padding:3px 1%;}
+.cols50{ float:left; width:48%; padding:3px 1%;}
+.cols51{ float:left; width:49%; padding:3px 1%;}
+.cols52{ float:left; width:50%; padding:3px 1%;}
+.cols53{ float:left; width:51%; padding:3px 1%;}
+.cols54{ float:left; width:52%; padding:3px 1%;}
+.cols55{ float:left; width:53%; padding:3px 1%;}
+.cols56{ float:left; width:54%; padding:3px 1%;}
+.cols57{ float:left; width:55%; padding:3px 1%;}
+.cols58{ float:left; width:56%; padding:3px 1%;}
+.cols59{ float:left; width:57%; padding:3px 1%;}
+.cols60{ float:left; width:58%; padding:3px 1%;}
+.cols61{ float:left; width:59%; padding:3px 1%;}
+.cols62{ float:left; width:60%; padding:3px 1%;}
+.cols63{ float:left; width:61%; padding:3px 1%;}
+.cols64{ float:left; width:62%; padding:3px 1%;}
+.cols65{ float:left; width:63%; padding:3px 1%;}
+.cols66{ float:left; width:64%; padding:3px 1%;}
+.cols67{ float:left; width:65%; padding:3px 1%;}
+.cols68{ float:left; width:66%; padding:3px 1%;}
+.cols69{ float:left; width:67%; padding:3px 1%;}
+.cols70{ float:left; width:68%; padding:3px 1%;}
+.cols71{ float:left; width:69%; padding:3px 1%;}
+.cols72{ float:left; width:70%; padding:3px 1%;}
+.cols73{ float:left; width:71%; padding:3px 1%;}
+.cols74{ float:left; width:72%; padding:3px 1%;}
+.cols75{ float:left; width:73%; padding:3px 1%;}
+.cols76{ float:left; width:74%; padding:3px 1%;}
+.cols77{ float:left; width:75%; padding:3px 1%;}
+.cols78{ float:left; width:76%; padding:3px 1%;}
+.cols79{ float:left; width:77%; padding:3px 1%;}
+.cols80{ float:left; width:78%; padding:3px 1%;}
+.cols81{ float:left; width:79%; padding:3px 1%;}
+.cols82{ float:left; width:80%; padding:3px 1%;}
+.cols83{ float:left; width:81%; padding:3px 1%;}
+.cols84{ float:left; width:82%; padding:3px 1%;}
+.cols85{ float:left; width:83%; padding:3px 1%;}
+.cols86{ float:left; width:84%; padding:3px 1%;}
+.cols87{ float:left; width:85%; padding:3px 1%;}
+.cols88{ float:left; width:86%; padding:3px 1%;}
+.cols89{ float:left; width:87%; padding:3px 1%;}
+.cols90{ float:left; width:88%; padding:3px 1%;}
+.cols91{ float:left; width:89%; padding:3px 1%;}
+.cols92{ float:left; width:90%; padding:3px 1%;}
+.cols93{ float:left; width:91%; padding:3px 1%;}
+.cols94{ float:left; width:92%; padding:3px 1%;}
+.cols95{ float:left; width:93%; padding:3px 1%;}
+.cols96{ float:left; width:94%; padding:3px 1%;}
+.cols97{ float:left; width:95%; padding:3px 1%;}
+.cols98{ float:left; width:96%; padding:3px 1%;}
+.cols99{ float:left; width:97%; padding:3px 1%;}
+.cols100{ float:left; width:98%; padding:3px 1%;}
+
+.col1{ width:1%; float:left; display:block}
+.col2{ width:2%; float:left; display:block}
+.col3{ width:3%; float:left; display:block}
+.col4{ width:4%; float:left; display:block}
+.col5{ width:5%; float:left; display:block}
+.col6{ width:6%; float:left; display:block}
+.col7{ width:7%; float:left; display:block}
+.col8{ width:8%; float:left; display:block}
+.col9{ width:9%; float:left; display:block}
+.col10{ width:10%; float:left; display:block}
+.col11{ width:11%; float:left; display:block}
+.col12{ width:12%; float:left; display:block}
+.col13{ width:13%; float:left; display:block}
+.col14{ width:14%; float:left; display:block}
+.col15{ width:15%; float:left; display:block}
+.col16{ width:16%; float:left; display:block}
+.col17{ width:17%; float:left; display:block}
+.col18{ width:18%; float:left; display:block}
+.col19{ width:19%; float:left; display:block}
+.col20{ width:20%; float:left; display:block}
+.col21{ width:21%; float:left; display:block}
+.col22{ width:22%; float:left; display:block}
+.col23{ width:23%; float:left; display:block}
+.col24{ width:24%; float:left; display:block}
+.col25{ width:25%; float:left; display:block}
+.col26{ width:26%; float:left; display:block}
+.col27{ width:27%; float:left; display:block}
+.col28{ width:28%; float:left; display:block}
+.col29{ width:29%; float:left; display:block}
+.col30{ width:30%; float:left; display:block}
+.col31{ width:31%; float:left; display:block}
+.col32{ width:32%; float:left; display:block}
+.col33{ width:33%; float:left; display:block}
+.col34{ width:34%; float:left; display:block}
+.col35{ width:35%; float:left; display:block}
+.col36{ width:36%; float:left; display:block}
+.col37{ width:37%; float:left; display:block}
+.col38{ width:38%; float:left; display:block}
+.col39{ width:39%; float:left; display:block}
+.col40{ width:40%; float:left; display:block}
+.col41{ width:41%; float:left; display:block}
+.col42{ width:42%; float:left; display:block}
+.col43{ width:43%; float:left; display:block}
+.col44{ width:44%; float:left; display:block}
+.col45{ width:45%; float:left; display:block}
+.col46{ width:46%; float:left; display:block}
+.col47{ width:47%; float:left; display:block}
+.col48{ width:48%; float:left; display:block}
+.col49{ width:49%; float:left; display:block}
+.col50{ width:50%; float:left; display:block}
+.col51{ width:51%; float:left; display:block}
+.col52{ width:52%; float:left; display:block}
+.col53{ width:53%; float:left; display:block}
+.col54{ width:54%; float:left; display:block}
+.col55{ width:55%; float:left; display:block}
+.col56{ width:56%; float:left; display:block}
+.col57{ width:57%; float:left; display:block}
+.col58{ width:58%; float:left; display:block}
+.col59{ width:59%; float:left; display:block}
+.col60{ width:60%; float:left; display:block}
+.col61{ width:61%; float:left; display:block}
+.col62{ width:62%; float:left; display:block}
+.col63{ width:63%; float:left; display:block}
+.col64{ width:64%; float:left; display:block}
+.col65{ width:65%; float:left; display:block}
+.col66{ width:66%; float:left; display:block}
+.col67{ width:67%; float:left; display:block}
+.col68{ width:68%; float:left; display:block}
+.col69{ width:69%; float:left; display:block}
+.col70{ width:70%; float:left; display:block}
+.col71{ width:71%; float:left; display:block}
+.col72{ width:72%; float:left; display:block}
+.col73{ width:73%; float:left; display:block}
+.col74{ width:74%; float:left; display:block}
+.col75{ width:75%; float:left; display:block}
+.col76{ width:76%; float:left; display:block}
+.col77{ width:77%; float:left; display:block}
+.col78{ width:78%; float:left; display:block}
+.col79{ width:79%; float:left; display:block}
+.col80{ width:80%; float:left; display:block}
+.col81{ width:81%; float:left; display:block}
+.col82{ width:82%; float:left; display:block}
+.col83{ width:83%; float:left; display:block}
+.col84{ width:84%; float:left; display:block}
+.col85{ width:85%; float:left; display:block}
+.col86{ width:86%; float:left; display:block}
+.col87{ width:87%; float:left; display:block}
+.col88{ width:88%; float:left; display:block}
+.col89{ width:89%; float:left; display:block}
+.col90{ width:90%; float:left; display:block}
+.col91{ width:91%; float:left; display:block}
+.col92{ width:92%; float:left; display:block}
+.col93{ width:93%; float:left; display:block}
+.col94{ width:94%; float:left; display:block}
+.col95{ width:95%; float:left; display:block}
+.col96{ width:96%; float:left; display:block}
+.col97{ width:97%; float:left; display:block}
+.col98{ width:98%; float:left; display:block}
+.col99{ width:99%; float:left; display:block}
+.col100{ width:100%; float:left; display:block}
+h1,h2,h3,h4,h5,h6{ font-family:Georgia, "Times New Roman", Times, serif;}
+
+.ad-global-btn{ padding:0 10px; background:#1652b4; border-radius:3px; border:#124292 1px solid; display:inline-block; height:32px; cursor:pointer; color:#fff;}
+.ad-global-btn:hover,.ad-global-btn:focus{background:#1c66e1;}
+.ad-global-btn:active{ background:#113f8a;}.marginnone{ margin:0px 0px 0px 0px;}
+.margintopnone{ margin-top:0px;}
+.marginbottomnone{ margin-bottom:0px;}
+.marginleftnone{ margin-left:0px;}
+.marginrightnone{ margin-right:0px;}
+.paddingnone{ padding:0px 0px 0px 0px;}
+.paddingtopnone{ padding-top:0px;}
+.paddingbottomnone{ padding-bottom:0px;}
+.paddingleftnone{ padding-left:0px;}
+.paddingrightnone{ padding-right:0px;}
+strong,b{font-weight:500;}
+.f-right{ float:right !important;}
+.f-left{ float:left !important;}
+.f-none{ float:none !important;}
+.f-inherit{ float:inherit !important;}
+.ad-margin-top-10{ margin-top:10px !important;}
+.ad-margin-left-10{ margin-left:10px !important;}
+.ad-margin-right-10{ margin-right:10px !important;}
+.ad-text-left{ text-align:left !important;}
+.ad-text-right{ text-align:right !important;}
+.ad-text-center{ text-align:center !important;}
+.ad-text-justify{ text-align:justify !important;}
+.padding_top_80{ padding-top:80px !important;}
+.lineheight18{ line-height:18px !important;}
+.red{ color:#F00; font-size:11px;}
+#error-data{bottom:30px;left:30px;padding:10px;float:left;position:fixed;z-index:230000;display:none;border-radius:8px;border:3px solid #f00;background:#ffffff;font-size:13px; font-family:"Times New Roman", Times, serif;}
+div.success{color:#49AB01;font-weight:bold;}
+div.error{ color:#F00; font-weight:bold;}
+/* padding top*/
+.paddtop1{ padding-top:1px !important;}
+.paddtop2{ padding-top:2px !important;}
+.paddtop3{ padding-top:3px !important;}
+.paddtop4{ padding-top:4px !important;}
+.paddtop5{ padding-top:5px !important;}
+.paddtop6{ padding-top:6px !important;}
+.paddtop7{ padding-top:7px !important;}
+.paddtop8{ padding-top:8px !important;}
+.paddtop9{ padding-top:9px !important;}
+.paddtop10{ padding-top:10px !important;}
+.paddtop12{ padding-top:12px !important;}
+.paddtop15{ padding-top:15px !important;}
+.paddtop18{ padding-top:18px !important;}
+.paddtop20{ padding-top:20px !important;}
+.paddtop22{ padding-top:22px !important;}
+.paddtop25{ padding-top:25px !important;}
+.paddtop28{ padding-top:28px !important;}
+.paddtop30{ padding-top:30px !important;}
+.paddtop32{ padding-top:32px !important;}
+.paddtop35{ padding-top:35px !important;}
+.paddtop38{ padding-top:38px !important;}
+.paddtop40{ padding-top:40px !important;}
+.paddtop42{ padding-top:42px !important;}
+.paddtop45{ padding-top:45px !important;}
+.paddtop48{ padding-top:48px !important;}
+.paddtop50{ padding-top:50px !important;}
+.paddtop52{ padding-top:52px !important;}
+.paddtop55{ padding-top:55px !important;}
+.paddtop58{ padding-top:58px !important;}
+.paddtop60{ padding-top:60px !important;}
+.paddtop62{ padding-top:62px !important;}
+.paddtop65{ padding-top:65px !important;}
+.paddtop68{ padding-top:68px !important;}
+.paddtop70{ padding-top:70px !important;}
+/* padding bott*/
+.paddbott1{ padding-bottom:1px !important;}
+.paddbott2{ padding-bottom:2px !important;}
+.paddbott3{ padding-bottom:3px !important;}
+.paddbott4{ padding-bottom:4px !important;}
+.paddbott5{ padding-bottom:5px !important;}
+.paddbott6{ padding-bottom:6px !important;}
+.paddbott7{ padding-bottom:7px !important;}
+.paddbott8{ padding-bottom:8px !important;}
+.paddbott9{ padding-bottom:9px !important;}
+.paddbott10{ padding-bottom:10px !important;}
+.paddbott11{ padding-bottom:11px !important;}
+.paddbott12{ padding-bottom:12px !important;}
+.paddbott15{ padding-bottom:15px !important;}
+.paddbott18{ padding-bottom:18px !important;}
+.paddbott20{ padding-bottom:20px !important;}
+.paddbott22{ padding-bottom:22px !important;}
+.paddbott25{ padding-bottom:25px !important;}
+.paddbott28{ padding-bottom:28px !important;}
+.paddbott30{ padding-bottom:30px !important;}
+.paddbott32{ padding-bottom:32px !important;}
+.paddbott35{ padding-bottom:35px !important;}
+.paddbott38{ padding-bottom:38px !important;}
+.paddbott40{ padding-bottom:40px !important;}
+.paddbott42{ padding-bottom:42px !important;}
+.paddbott45{ padding-bottom:45px !important;}
+.paddbott48{ padding-bottom:48px !important;}
+.paddbott50{ padding-bottom:50px !important;}
+.paddbott52{ padding-bottom:52px !important;}
+.paddbott55{ padding-bottom:55px !important;}
+.paddbott58{ padding-bottom:58px !important;}
+.paddbott60{ padding-bottom:60px !important;}
+.paddbott62{ padding-bottom:62px !important;}
+.paddbott65{ padding-bottom:65px !important;}
+.paddbott68{ padding-bottom:68px !important;}
+.paddbott70{ padding-bottom:70px !important;}
+
+.fleft{ float:left !important;}
+.fright{ float:right !important;}
+.txtleft{ text-align:left !important;}
+.txtright{ text-align:right !important;}
+.txtcenter{ text-align:center !important;}
+.margin_left10{ margin-left:10px !important;}
+.margin_right10{ margin-right:10px !important;}
+.margin_left15{ margin-left:15px !important;}
+.margin_right15{ margin-right:15px !important;}
+.margintop10{ margin-top:10px !important;}
+.margintop15{ margin-top:15px !important;}
+.margintop20{ margin-top:20px !important;}
+.margintop30{ margin-top:30px !important;}
+.margintop40{ margin-top:40px !important;}
+.margintop50{ margin-top:50px !important;}
+/* font size */
+.font11{ font-size:11px !important;}
+.font12{ font-size:12px !important;}
+.font13{ font-size:13px !important;}
+.font14{ font-size:14px !important;}
+.font15{ font-size:15px !important;}
+.font16{ font-size:16px !important;}
+.font17{ font-size:17px !important;}
+.font18{ font-size:18px !important;}
+.font19{ font-size:19px !important;}
+.font20{ font-size:20px !important;}
+.font21{ font-size:21px !important;}
+.font22{ font-size:22px !important;}
+.font23{ font-size:23px !important;}
+.font24{ font-size:24px !important;}
+.font25{ font-size:25px !important;}
+.font26{ font-size:26px !important;}
+.font27{ font-size:27px !important;}
+.font28{ font-size:28px !important;}
+.font29{ font-size:29px !important;}
+.font30{ font-size:30px !important;}
+.font45{ font-size:45px !important;}
+.font46{ font-size:46px !important;}
+.font47{ font-size:47px !important;}
+.font48{ font-size:48px !important;}
+.font49{ font-size:49px !important;}
+.font50{ font-size:50px !important;}
+
+/*******************COUNTRIES POPUP**************************/
+.countries{padding:1% 3%; margin:0; height:450px; width:94% !important;font-family:Calibri;color:#4D4F53;}
+.countries h2.text_capital{ text-transform:uppercase; font-weight:normal; padding:0px; margin:0px;}
+.countries p{ margin-top:25px;}
+.countries ul{ padding:0px; margin:25px 0 0 0;float:left; list-style:none;}
+.countries ul li { float:left; width:270px;text-transform:uppercase; font-size:12px; padding-top:5px;padding-bottom:5px;}
+.countries ul li a{ text-decoration:none;color:#4D4F53}
+.countries ul li a:hover{color:#000000;}
+/*******************LOGIN POPUP**************************/
+.login_section{padding:1% 3% 0 3%; margin:0; width:94% !important;font-family:Calibri;color:#4D4F53; font-size:13px;}
+.login_section form{ margin:0px; padding:0px;}
+.login_section input[type=text], .login_section input[type=password]{ border:1px solid #D7D7D7; background:#F9F9F9; box-shadow:inset 0px 0px 1px #F2F2F2; padding:2px 0px 3px 0px; float:left;border-radius:1px;min-width:230px; font-size:14px;}
+.login_section input[type=submit]{ border:none; background:#8B8D8E; color:#fff; font-family:"Times New Roman", Times, serif;text-transform:uppercase; border-radius:1px; padding:10px; cursor:pointer;}
+.login_section .col40, .login_section .col60{ margin-top:10px;}
+.login_section label{ text-transform:uppercase;}
+.login_section a{ text-decoration:underline;color:#4D4F53}
+.login_section h2.text_capital{ text-transform:uppercase; font-weight:normal; padding:0px; margin:0px; font-size:24px !important}
+.login_section .left_section{ width:45%; float:left; padding-right:4%; height:470px; border-right:1px solid #D7D7D7;}
+.login_section .right_section{ width:45%; float:left; padding-left:5%; height:470px;}
+.login_section .right_section ul{ padding:0px 0px 1px 15px; margin:0px; float:left;}
+/*******************SUBSCRIBE POPUP**************************/
+.subscribe_section{padding:1% 3% 0 3%; margin:0; width:94% !important;font-family:Calibri;color:#4D4F53; font-size:13px;}
+.subscribe_section form{ margin:0px; padding:0px;}
+.subscribe_section input[type=text], .subscribe_section input[type=password]{ border:1px solid #D7D7D7; background:#F9F9F9; box-shadow:inset 0px 0px 1px #F2F2F2; padding:2px 0px 3px 0px; float:left;border-radius:1px;min-width:290px; font-size:14px;}
+.subscribe_section select{ border:1px solid #D7D7D7; background:#fff; float:left;border-radius:1px;width:293px !important; font-size:14px;}
+.subscribe_section input[type=submit]{ border:none; background:#8B8D8E; color:#fff; font-family:"Times New Roman", Times, serif;text-transform:uppercase; border-radius:1px; padding:10px;cursor:pointer;}
+.subscribe_section .col40, .subscribe_section .col60{ margin-top:10px;}
+.subscribe_section label{ text-transform:uppercase;}
+.subscribe_section a{ text-decoration:underline;color:#4D4F53}
+.subscribe_section h2.text_capital{ text-transform:uppercase; font-weight:normal; padding:0px; margin:0px; font-size:24px !important}
+.subscribe_section .left_section{ width:30%; float:left; padding-top:8%; padding-left:2%; padding-right:4%; height:390px; border-right:1px solid #D7D7D7;}
+.subscribe_section .right_section{ width:58%; float:left; padding-left:5%; height:470px;}
+.subscribe_section .right_section ul{ padding:0px 0px 1px 15px; margin:0px; float:left;}
+
+/*******************SHARE EMAIL POPUP**************************/
+.email_section{padding:1% 3% 0 3%; margin:0; width:94% !important;font-family:Calibri;color:#4D4F53; font-size:13px;}
+.email_section form{ margin:0px; padding:0px;}
+.email_section input[type=text], .email_section input[type=password]{ border:1px solid #D7D7D7; background:#F9F9F9; box-shadow:inset 0px 0px 1px #F2F2F2; padding:2px 0px 3px 0px; float:left;border-radius:1px;min-width:290px; font-size:14px;}
+.email_section select{ border:1px solid #D7D7D7; background:#fff; float:left;border-radius:1px;width:293px !important; font-size:14px;}
+.email_section textarea{ border:1px solid #D7D7D7; background:#F9F9F9; box-shadow:inset 0px 0px 1px #F2F2F2; padding:2px 0px 3px 0px; float:left;border-radius:1px; font-size:14px;}
+.email_section input[type=submit]{ border:none; background:#8B8D8E; color:#fff; font-family:"Times New Roman", Times, serif;text-transform:uppercase; border-radius:1px; padding:10px;cursor:pointer;}
+.email_section .col40, .email_section .col60{ margin-top:10px;}
+.email_section label{ text-transform:uppercase;}
+.email_section a{ text-decoration:underline;color:#4D4F53}
+.email_section h2.text_capital{ text-transform:uppercase; font-weight:normal; padding:0px; margin:0px; font-size:24px !important}
+.email_section .left_section{ width:34%; float:left; padding-left:2%; height:390px; border-right:1px solid #D7D7D7;}
+.email_section .right_section{ width:58%; float:left; padding-left:5%; height:470px;}
+.email_section .right_section ul{ padding:0px 0px 1px 15px; margin:0px; float:left;}
+
+/*******************FORGOT PASSWORD POPUP**************************/
+.password_section{padding:15% 25% 1% 25%; margin:0; width:50% !important;font-family:Calibri;color:#4D4F53; font-size:13px;}
+.password_section form{ margin:0px; padding:0px;}
+.password_section input[type=text]{ border:1px solid #D7D7D7; background:#F9F9F9; box-shadow:inset 0px 0px 1px #F2F2F2; padding:2px 0px 3px 0px; float:left;border-radius:1px;min-width:272px; font-size:14px;}
+.password_section input[type=submit]{ border:none; background:#8B8D8E; color:#fff; font-family:"Times New Roman", Times, serif;text-transform:uppercase; border-radius:1px; padding:10px; cursor:pointer;}
+.password_section .col40, .subscribe_section .col60{ margin-top:10px;}
+.password_section label{ text-transform:uppercase;}
+.password_section h2.text_capital{ text-transform:uppercase; font-weight:normal; padding:0px; margin:0px; font-size:24px !important}
+
+/*******************SUBSCRIBE POPUP**************************/
+.contact_section{padding:1% 3% 0 3%; margin:0; width:94% !important;font-family:Calibri;color:#4D4F53; font-size:13px;}
+.contact_section form{ margin:0px; padding:0px;}
+.contact_section input[type=text], .contact_section input[type=password]{ border:1px solid #D7D7D7; background:#F9F9F9; box-shadow:inset 0px 0px 1px #F2F2F2; padding:2px 0px 3px 0px; float:left;border-radius:1px;min-width:290px; font-size:14px;}
+.contact_section select{ border:1px solid #D7D7D7; background:#fff; float:left;border-radius:1px;width:293px !important; font-size:14px;}
+.contact_section input[type=submit]{ border:none; background:#8B8D8E; color:#fff; font-family:"Times New Roman", Times, serif;text-transform:uppercase; border-radius:1px; padding:10px;cursor:pointer;}
+.contact_section .col40, .contact_section .col60{ margin-top:10px;}
+.contact_section label{ text-transform:uppercase;}
+.contact_section a{ text-decoration:underline;color:#4D4F53}
+.contact_section h2.text_capital{ text-transform:uppercase; font-weight:normal; padding:0px; margin:0px; font-size:24px !important}
+.contact_section textarea{ border:1px solid #D7D7D7; background:#F9F9F9; box-shadow:inset 0px 0px 1px #F2F2F2; padding:2px 0px 3px 0px; float:left;border-radius:1px; font-size:14px;}
+.contact_section .left_section{ width:30%; float:left; padding-top:1%; padding-left:2%; padding-right:4%; height:390px; border-right:1px solid #D7D7D7;}
+.contact_section .right_section{ width:58%; float:left; padding-left:5%; height:470px;}
+.contact_section .right_section ul{ padding:0px 0px 1px 15px; margin:0px; float:left;}
+
+/*******************SUBSCRIBE POPUP**************************/
+.content_section{padding:0% 3% 0 3%; margin:0; width:94% !important;font-family:Calibri;color:#4D4F53; font-size:13px;}
+.content_section h2.text_capital{ text-transform:uppercase; font-weight:normal; padding:0 0 15px 0; margin:0px; font-size:24px !important;border-bottom:1px solid #D7D7D7;}
+.content_section .left_section{ width:20%; float:left; padding-top:2%; padding-right:4%; height:390px;}
+.content_section .left_section ul.subnav{ padding:0px; margin:0px; list-style:none;}
+.content_section .left_section ul.subnav li{ position:relative;margin-bottom:8px}
+.content_section .left_section ul.subnav li a{font-size:10px;color:#A5A5A5;text-transform:uppercase;font-family:Helvetica, Arial, Verdana, sans-serif; text-decoration:none; font-weight:600}
+.content_section .left_section ul.subnav li.active>a , .content_section .left_section ul.subnav li>a:hover{ text-decoration:underline; color:#000000}
+
+.content_section .right_section{ width:68%; float:left; padding-left:5%; height:420px;padding-top:2%;}
+.content_section .right_section h3{text-transform:uppercase; font-weight:normal; padding:0px; margin:0px; font-size:17px !important;}
+/*******************SUBSCRIBE POPUP**************************/
+
+.cart_section{padding:1% 3% 0 3%; margin:0; width:94% !important;font-family:Calibri;color:#4D4F53; font-size:13px;}
+.cart_section form{ margin:0px; padding:0px;}
+.cart_section input[type=text], .cart_section input[type=password]{ border:1px solid #D7D7D7; background:#F9F9F9; box-shadow:inset 0px 0px 1px #F2F2F2; padding:2px 0px 3px 0px; float:left;border-radius:1px;min-width:290px; font-size:14px;}
+.cart_section select{ border:1px solid #D7D7D7; background:#fff; float:left;border-radius:1px;width:293px !important; font-size:14px;}
+.cart_section input[type=submit]{ border:none; background:#8B8D8E; color:#fff; font-family:"Times New Roman", Times, serif;text-transform:uppercase; border-radius:1px; padding:10px;cursor:pointer;}
+.cart_section .col40, .cart_section .col60{ margin-top:10px;}
+.cart_section label{ text-transform:uppercase;}
+.cart_section a{ text-decoration:underline;color:#4D4F53}
+.cart_section h2.text_capital{ text-transform:uppercase; font-weight:normal; padding:0px; margin:0px; font-size:24px !important}
+.cart_section textarea{ border:1px solid #D7D7D7; background:#F9F9F9; box-shadow:inset 0px 0px 1px #F2F2F2; padding:2px 0px 3px 0px; float:left;border-radius:1px; font-size:14px;}
+.cart_section .left_section{ width:30%; float:left; padding-top:1%; padding-left:2%; padding-right:4%; height:390px; border-right:1px solid #D7D7D7;}
+.cart_section .right_section{ width:58%; float:left; padding-left:5%; height:470px;}
+.cart_section .right_section ul{ padding:0px 0px 1px 15px; margin:0px; float:left;}
+

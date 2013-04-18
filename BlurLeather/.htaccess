@@ -1,0 +1,21 @@
+RewriteEngine on 
+
+
+RewriteRule ^womenswears.php$ products_slider.php?pre_category_id=2
+RewriteRule ^menswears.php$ products_slider.php?pre_category_id=3
+RewriteRule ^scraf-boutiques.php$ products_slider.php?pre_category_id=4
+RewriteRule ^sales.php$ products_slider.php?pre_category_id=5
+
+RewriteRule ^womenswears-([0-9]+).php$ products.php?pre_category_id=2&cat=$1
+RewriteRule ^menswears-([0-9]+).php$ products.php?pre_category_id=3&cat=$1
+RewriteRule ^scraf-boutiques-([0-9]+).php$ products.php?pre_category_id=4&cat=$1
+RewriteRule ^sales-([0-9]+).php$ products.php?pre_category_id=5&cat=$1
+
+RewriteRule ^womenswears-([0-9]+)-([0-9]+).php$ products.php?pre_category_id=2&cat=$1&sub=$2
+RewriteRule ^menswears-([0-9]+)-([0-9]+).php$ products.php?pre_category_id=3&cat=$1&sub=$2
+RewriteRule ^scraf-boutiques-([0-9]+)-([0-9]+).php$ products.php?pre_category_id=4&cat=$1&sub=$2
+RewriteRule ^sales-([0-9]+)-([0-9]+).php$ products.php?pre_category_id=5&cat=$1&sub=$2
+
+
+RewriteRule ^womens-shop-look.php$ shop-look.php?pre_category_id=2
+RewriteRule ^mens-shop-look.php$ shop-look.php?pre_category_id=3
